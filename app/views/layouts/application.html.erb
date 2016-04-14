@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Treebook</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<a href="#" class="navbar-brand">Treebook</a>
+		<ul class="nav navbar-nav">
+			<li><%= link_to "All Statuses", statuses_path %></li>
+		</ul>
+	</div>
+</nav>
+
+<div class="container">
+
+<%= yield %>
+
+</div>
+</body>
+</html>
